@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chèn video</title>
+  </head>
+  <body>
+    <h1>Văn hóa đại chúng Hàn Quốc</h1>
+    <p>
+      Kể từ khi bước sang thế kỷ 21, Hàn Quốc đã nổi lên như một nước xuất khẩu
+      lớn về văn hóa đại chúng và du lịch, những khía cạnh đã trở thành một phần
+      quan trọng trong nền kinh tế phát triển của nước này. Sự phổ biến ngày
+      càng tăng của văn hóa đại chúng Hàn Quốc trên thế giới ít nhất một phần
+      được thúc đẩy bởi chính phủ Hàn Quốc hỗ trợ các ngành công nghiệp sáng tạo
+      của họ thông qua trợ cấp và tài trợ cho các công ty khởi nghiệp, như một
+      hình thức quyền lực mềm với mục tiêu trở thành nhà xuất khẩu văn hóa hàng
+      đầu thế giới, phù hợp với văn hóa Nhật Bản và Anh Quốc, một thị trường
+      ngách mà Hoa Kỳ đã thống trị trong gần một thế kỷ. Năm 2014, chính phủ Hàn
+      Quốc đã phân bổ 1% ngân sách hàng năm cho các ngành công nghiệp văn hóa và
+      gây quỹ 1 tỷ USD để nuôi dưỡng văn hóa đại chúng. Khi tác động của K-pop
+      và các bộ phim truyền hình Hàn Quốc như "Gangnam Style" và Mặt trăng ôm
+      mặt trời đã đạt được sự công nhận có ảnh hưởng và danh tiếng quốc tế, xã
+      hội Hàn Quốc bắt đầu được công nhận là phát triển ngang bằng với thế giới
+      phương Tây.
+    </p>
+    <!-- controls:tạo ra các nút điều khiển cho video, cho phép người dùng phát, tạm dừng và điều chỉnh âm lượng của video. 
+     type: định dạng video -->
+    <video
+      src="./assets/video.mp4"
+      type="video/mp4"
+      controls
+      height="300"
+    ></video>
+    <!-- poster: hiển thị hình nền của video -->
+    <video poster="./assets/video_cover.png" controls>
+      <source src="./assets/video.webm" type="video/webm" />
+      <source src="./assets/video.mp4" type="video/mp4" />
+    </video>
+    <!-- Thêm audio -->
+    <audio controls>
+      <source src="./assets/audio.mp3" type="audio/mpeg" />
+      <source src="./assets/audio.ogg" type="audio/ogg" />
+    </audio>
+  </body>
+</html>
