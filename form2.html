@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Đơn Gia Nhập Hội Fan Cuồng Đội Tuyển Bóng Đá Việt Nam</h1>
+    <p>
+      Chào mừng bạn đến với hội của những trái tim đỏ rực, cháy hết mình vì màu
+      cờ sắc áo!
+    </p>
+    <form>
+      <!-- Họ và tên -->
+      <label for="fullname"
+        >Họ và tên (nhập đúng để chúng tôi gọi bạn đi bão nha!):
+      </label>
+      <br />
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        placeholder="VD: Lê An Châu Sa"
+      /><br /><br />
+      <!-- Email -->
+      <label for="email">Email để nhận link xem bóng đá chất lượng cao: </label>
+      <br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="VD: example@email.com"
+        size="30"
+      /><br /><br />
+      <!-- Story -->
+      <label for="story"
+        >Mô tả cảm xúc khi Việt Nam ghi bàn thắng quyết định trong trận chung
+        kết AFF Cup 2018:
+      </label>
+      <br />
+      <textarea
+        id="story"
+        name="story"
+        rows="5"
+        cols="40"
+        placeholder="Gõ thật lòng, đừng giấu cảm xúc nhé!"
+        spellcheck="true"
+      ></textarea
+      ><br /><br />
+      <!-- Giới tính -->
+      <fieldset>
+        <legend>Giới tính:</legend>
+        <label for="male">
+          <input id="male" type="radio" name="gender" value="male" />
+          Nam
+        </label>
+        <br />
+        <label for="female">
+          <input id="female" type="radio" name="gender" value="female" />
+          Nữ
+        </label>
+        <br />
+        <label for="other">
+          <input id="other" type="radio" name="gender" value="other" />
+          Khác
+        </label>
+      </fieldset>
+      <br />
+      <br />
+      <!-- Vị trí đá yêu thích -->
+      <label for="position">Vị trí đá yêu thích của bạn trên sân:</label>
+      <br />
+      <select id="position" name="position">
+        <option value="forward">Tiền đạo (ghi bàn)</option>
+        <option value="midfielder">Tiền vệ (chuyền bóng)</option>
+        <option value="defender">Hậu vệ (tranh bóng)</option>
+        <option value="goalkeeper">Thủ môn (Cản phá)</option>
+      </select>
+      <br /><br />
+      <!-- Mức độ fan cuồng -->
+      <label for="fanlevel">Mức độ fan cuồng của bạn (từ 1 đến 10):</label>
+      <input
+        type="number"
+        id="fanlevel"
+        name="fanlevel"
+        min="1"
+        max="10"
+        step="1"
+      /><br /><br />
+      <!-- Chọn cầu thủ yêu thích nhất -->
+      <label for="favoriteplayer">Cầu thủ yêu thích nhất của bạn:</label>
+      <input
+        type="text"
+        id="favoriteplayer"
+        name="favoriteplayer"
+        list="players"
+      />
+      <datalist id="players">
+        <option value="Nguyễn Quang Hải"></option>
+        <option value="Tấn Tài"></option>
+        <option value="Hà Đức Chinh"></option>
+        <option value="Lê Công Vinh"></option>
+        <option value="Lê An Châu Sa"></option>
+        <option value="Lê Văn A"></option>
+        <option value="Trần Thị B"></option>
+        <option value="Lại Văn C"></option>
+      </datalist>
+      <br /><br />
+      <p><b>Bạn có cam kết không quay lưng khi đội tuyển đá không tốt ?</b></p>
+      <br />
+      <label for="commitment">
+        <input id="commitment" type="checkbox" name="commitment" checked />
+        Cam kết 100% trung thành, dù thắng hay thua!
+      </label>
+      <br /><br />
+      <!-- Nút -->
+      <button type="submit">Gửi đơn gia nhập</button>
+      <button type="reset">Xóa thông tin đã nhập</button>
+    </form>
+  </body>
+</html>
