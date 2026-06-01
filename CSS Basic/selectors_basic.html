@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+  </head>
+  <style>
+    /* Tag selector áp dụng style cho các phần tử cùng loại */
+    h1 {
+      font-size: 40px;
+    }
+    /* Class selector áp dụng style cho các phần tử có cùng class */
+    .red {
+      color: red;
+    }
+    /* ID selector áp dụng style cho một phần tử duy nhất */
+    #header {
+      font-size: 36px;
+    }
+    /* Descendant selector áp dụng cho con cháu của phần tử cha */
+    .A .B p {
+      color: blue;
+    }
+    /* Bộ chọn AND áp dụng cho phần tử có đồng thời nhiều class  */
+    .button.primary {
+      background-color: green;
+    }
+    /* Bộ chọn OR cho nhiều phần tử (ngăn cách bởi dấu ,) */
+    h1,
+    h2 {
+      font-family: "Arial", sans-serif;
+    }
+  </style>
+  <body>
+    <h1>Chào mừng đến với thế giới CSS!</h1>
+    <h1 class="red">🔥 Bí kíp CSS bạn không thể bỏ lỡ! 🔥</h1>
+    <h1>Học CSS với tớ</h1>
+    <h2 id="header" class="red">Hành trình khám phá bắt đầu từ đây</h2>
+
+    <p>
+      CSS giúp bạn biến những dòng HTML nhàm chán thành giao diện sống động.
+    </p>
+
+    <p class="red">
+      💡 Mẹo hay: Dùng màu sắc và kích thước hợp lý để tăng trải nghiệm người
+      dùng!
+    </p>
+
+    <div class="A">
+      <p>
+        🌎 Đây là một phần nội dung đặc biệt nằm bên trong
+        <code>&lt;div class="A"&gt;</code>.
+      </p>
+      <div class="B">
+        <p>
+          🌎 Đây là một phần nội dung đặc biệt nằm bên trong
+          <code>&lt;div class="B"&gt;</code>. Và B nằm bên trong A.
+        </p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="button primary">🚀 Khám phá ngay</button>
+      <button class="button">⬅ Quay lại</button>
+    </div>
+  </body>
+</html>
