@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vh-vw</title>
+    <style>
+      div {
+        background-color: lightblue;
+        width: 80vw; /* 80% chiều rộng của viewport */
+        height: 50vh; /* 50% chiều cao của viewport */
+      }
+      .parent {
+        background-color: lightcoral;
+        width: 80vw; /* 80% chiều rộng của viewport */
+        height: 50vh; /* 50% chiều cao của viewport */
+      }
+      .child {
+        background-color: lightgreen;
+        width: 80%; /* 80% chiều rộng của phần tử cha (parent) */
+        height: 50%; /* 50% chiều cao của phần tử cha (parent) */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <br />
+    <br />
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
