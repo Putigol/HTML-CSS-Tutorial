@@ -6,6 +6,7 @@
         width: 200px;
         height: 100px;
         border: 2px solid blue;
+        box-sizing: border-box;
       }
 
       .div2 {
@@ -13,20 +14,15 @@
         height: 100px;
         padding: 20px;
         border: 2px solid red;
+        box-sizing: border-box;
       }
     </style>
   </head>
   <body>
-    <h1>Lúc box-sizing != content-box;</h1>
+    <h1>Lúc box-sizing = content-box;</h1>
 
-    <div class="div1">
-      Div này có chiều rộng 200px (chiều rộng thực tế là 204px; do border là 2px
-      mỗi bên).
-    </div>
+    <div class="div1">Div này có chiều rộng 200px</div>
     <br />
-    <div class="div2">
-      Div này cũng có chiều rộng 200px (chiều rộng thực tế là 244px, do có cả
-      padding và border).
-    </div>
+    <div class="div2">Div này cũng có chiều rộng 200px</div>
   </body>
 </html>
