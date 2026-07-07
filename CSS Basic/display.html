@@ -8,7 +8,7 @@
       }
 
       li {
-        display: inline; /*chiếm vừa đủ không gian*/
+        display: inline-block; /*chiếm vừa đủ không gian*/
         width: 200px;
         border: 1px solid black;
         padding: 5px;
@@ -17,7 +17,7 @@
     </style>
   </head>
   <body>
-    <h1>Hiển thị danh sách các liên kết dưới dạng block:</h1>
+    <h1>Hiển thị danh sách các liên kết dưới dạng inline:</h1>
 
     <ul>
       <li><a href="/html/default.asp" target="_blank">HTML</a></li>
@@ -26,8 +26,8 @@
     </ul>
 
     <p>
-      width: 200px không được áp dụng cho các liên kết khi sử dụng display:
-      inline
+      width: 200px được áp dụng cho các liên kết khi sử dụng display:
+      inline-block.
     </p>
   </body>
 </html>
